@@ -30,8 +30,9 @@ body {
     flex-flow: column;
 }
 
+
 .header{
-    height: 100px;
+    height: 50px;
     background: url(IMG_0103.jpg) no-repeat center top;
     background-size: cover;
 }
@@ -52,8 +53,10 @@ body {
 
 .title{
     margin-bottom: 40px;
-    font: 60px;
-    text-transfomr: uppercase;
+    font: 80px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 p {
@@ -63,14 +66,19 @@ p {
 .btn {
     display: inline-block;
     padding: 10px 40px;
-    border: 2px solid  #fff;
-    color: #fff;
+    border: 2px solid  hsl(0, 88%, 45%);
+    color: hsl(266, 84%, 36%);
     text-decoration: none;
 }
 
 .content{
-    padding: 80px 0;
+    padding: 70px 0;
 }
+
+.content1{
+    padding: 20px 0;
+}
+
 
 .abo{
     background: #ff9000;
@@ -78,7 +86,7 @@ p {
 }
 
 .abo p {
-    max-width: 1055px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -105,25 +113,76 @@ p {
 }
 
 .ubicacion{
-    background: #3d3f36;
+    background: #ff9000;
     color:#fff;
     padding-bottom: 0;
 
 }
 
 .ubicacion .map img{
-    max-width: 100%;
-    height: 100%;
+    max-width: 10%;
+    height: 10%;
 
 }
 
 .list-colaboradores figure {
     position: relative;
-    max-width: 100px;
-    height: 100px;
+    max-width: 150px;
+    height: 200px;
 }
 
 .list-colaboradores figure:after  {
+    content: " ";
+    position absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: #ff9000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+
+.list-colaboradores img {
+    position: relative;
+    z-index: 1;
+}
+
+.list-colaboradores li {
+    padding:0 10px ;
+}
+
+.list-colaboradores figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+}
+
+
+.ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+
+.ubicacion figure {
+    position: relative;
+    max-width: 100px;
+    height: 200px;
+}
+
+.ubicacion figure:after  {
     content: " ";
     position absolute;
     left: 0;
@@ -136,20 +195,21 @@ p {
 
 }
 
-.list-colaboradores img {
+.ubicacion img {
     position: relative;
     z-index: 1;
 }
 
-.list-colaboradores li {
+.ubicacion li {
     padding:0 30px ;
 }
 
-.list-colaboradores figcaption {
+.ubicacion figcaption {
     position: absolute;
     left: 0;
     right: 0;
     bottom: -40px;
 }
+
 
 
